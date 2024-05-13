@@ -9,7 +9,7 @@ const Home = () => {
     { id: 5, title: 'mobi', content: 'Riel' },
   ]);
 
-  const delTodo = (id: Number) => {
+  const delTodo = (id: number) => {
     setTodos(todos.filter((todos) => todos.id != id));
   };
 
