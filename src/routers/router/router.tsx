@@ -2,6 +2,7 @@ import { Outlet, createBrowserRouter } from 'react-router-dom';
 
 import Home from '../../pages/home';
 import AddTodo from '../../pages/addTodo';
+import Todo from '../../pages/crud/todo';
 
 export const Router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ export const Router = createBrowserRouter([
       {
         path: '/AddTodo',
         element: <AddTodo />,
+      },
+      {
+        path: '/Todo',
+        element: <Todo />,
       },
     ],
   },
