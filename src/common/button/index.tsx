@@ -2,7 +2,7 @@ import { VariantProps, cva } from 'class-variance-authority';
 import { FC } from 'react';
 import { cn } from '../../libs/tailwind-css/utils';
 
-const ButtonVariants = cva(` bg-r w-48 h-48 text-center px-[1rem] py-[0.5rem] text-white`, {
+const ButtonVariants = cva(` w-fit min-w-48 h-48  text-center px-[1rem] py-[0.5rem] text-white `, {
   variants: {
     shape: {
       rectangular: 'rounded-none',

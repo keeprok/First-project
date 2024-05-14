@@ -7,7 +7,7 @@ const Home = () => {
       <Button color="blue">2</Button>
       <Button shape="roundSqure">3</Button>
       <Button color="blue" shape="roundSqure">
-        4
+        4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
       </Button>
     </div>
   );
