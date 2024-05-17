@@ -40,8 +40,8 @@ const Home = () => {
       state: 'false',
     };
     patchTodo(updateData);
-    getTodoList();
     setIsPatch(false);
+    getTodoList();
   };
   return (
     <div>
