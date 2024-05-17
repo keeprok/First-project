@@ -1,11 +1,8 @@
-import { useState } from 'react';
 import { InputForm } from '../../../common/input/input-form';
-import { postSignIn } from '../../../libs/axios/AxiosUser';
-import { user } from '../../../types/api/apiUser';
+import { postSignUp } from '../../../libs/axios/AxiosUser';
 
 const SignUp = () => {
-  const [userData, setUserData] = useState<user>({ email: '', pw: '' });
-  const onSignIn: React.FormEventHandler<HTMLFormElement> = async (e) => {
+  const onSignUp: React.FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
     const form = e.currentTarget;
     const $email = form.elements.namedItem('email') as HTMLFormElement | null;
@@ -16,13 +13,12 @@ const SignUp = () => {
       email: $email.value,
       pw: $pw.value,
     };
-    setUserData(newData);
 
-    await postSignIn(userData);
+    await postSignUp(newData);
   };
   return (
     <div>
-      <form onSubmit={onSignIn}>
+      <form onSubmit={onSignUp}>
         <InputForm text="email" type="text" id="email" name="email" />
         <InputForm text="P.W" type="text" id="pw" name="pw" />
         <button type="submit">가입</button>

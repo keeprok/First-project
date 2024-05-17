@@ -4,8 +4,7 @@ import { axiosInstanse } from '../instanse';
 
 export const postSignUp = async ({ email, pw }: user) => {
   const response = await axiosInstanse.post('/todo/user/sign-up', { email, pw });
-
-  return response;
+  return response.data;
 };
 
 export const postSignIn = async ({ email, pw }: user) => {
