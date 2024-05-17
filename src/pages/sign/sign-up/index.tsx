@@ -11,7 +11,7 @@ const SignUp = () => {
     const $email = form.elements.namedItem('email') as HTMLFormElement | null;
     const $pw = form.elements.namedItem('pw') as HTMLFormElement | null;
     if (!$email || !$pw) return;
-    console.log($pw.value);
+
     const newData = {
       email: $email.value,
       pw: $pw.value,
