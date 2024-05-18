@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { deleteTodo, getTodo, patchTodo } from '../../libs/axios/AxiosTodo';
-import { TodoList } from '../../types/todo';
+import type { TodoList } from '../../types/todo';
 import { InputForm } from '../../common/input/input-form';
 
 const Home = () => {

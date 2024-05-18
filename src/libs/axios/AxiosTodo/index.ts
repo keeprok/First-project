@@ -1,4 +1,4 @@
-import { GetTodoPr, PatchTodoPrs, PostTodoPrs, deleteTodoPr } from '../../../types/api/apiTodo';
+import type { GetTodoPr, PatchTodoPrs, PostTodoPrs, deleteTodoPr } from '../../../types/api/apiTodo';
 import { axiosInstanse } from '../instanse';
 
 export const postTodo = async ({ title, content }: PostTodoPrs) => {

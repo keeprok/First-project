@@ -6,9 +6,6 @@ export type inputForm = {
   placeholder?: string;
 };
 
-// export type buttonForm = {
-//   children: React.ReactNode;
-// };
 export type TodoList = {
   idx: string;
   title: string;

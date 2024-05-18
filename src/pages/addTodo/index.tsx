@@ -1,6 +1,4 @@
 import { InputForm } from '../../common/input/input-form';
-// import { postTodo } from '../../libs/axios/AxiosTodo';
-
 import { postTodo } from '../../libs/axios/AxiosTodo';
 
 const AddTodo = () => {
