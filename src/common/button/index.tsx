@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { cn } from '../../libs/tailwind-css/utils';
-import { ButtonVoid } from '../../types/common';
+import type { ButtonVoid } from '../../types/common';
 import { ButtonVariants } from '../../types/variants';
 
 const Button: FC<ButtonVoid> = ({ shape, color, children, ...props }) => {
