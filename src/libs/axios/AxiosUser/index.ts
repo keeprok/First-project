@@ -1,5 +1,5 @@
 import { user } from '../../../types/api/apiUser';
-import { setSessionAccessToken } from '../../../utils/auth-storage-manager';
+import { setSessionAccessToken } from '../../../utils/token/auth-storage-manager';
 import { axiosInstanse } from '../instanse';
 
 export const postSignUp = async ({ email, pw }: user) => {

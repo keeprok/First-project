@@ -1,4 +1,4 @@
-import { Access_Token } from './token';
+import { Access_Token } from '../../common/constants/token';
 
 export const setSessionAccessToken = (token: string) => {
   sessionStorage.setItem(Access_Token, token);
