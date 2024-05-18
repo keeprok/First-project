@@ -1,4 +1,4 @@
-import type { GetTodoPr, PatchTodoPrs, PostTodoPrs, deleteTodoPr } from '../../../types/api/apiTodo';
+import type { GetTodoPr, PatchTodoPrs, PostTodoPrs, DeleteTodoPr } from '../../../types/api/apiTodo';
 import { axiosInstanse } from '../instanse';
 
 export const postTodo = async ({ title, content }: PostTodoPrs) => {
@@ -30,7 +30,7 @@ export const patchTodo = async ({ title, content, state, todoId }: PatchTodoPrs)
   return response.data;
 };
 
-export const deleteTodo = async ({ todoId }: deleteTodoPr) => {
+export const deleteTodo = async ({ todoId }: DeleteTodoPr) => {
   const response = await axiosInstanse.delete(`/todo/${todoId}`);
   return response.data;
 };

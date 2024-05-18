@@ -1,4 +1,4 @@
-export type inputForm = {
+export type InputFormPr = {
   text: string;
   name: string;
   type: string;

@@ -11,6 +11,6 @@ export type PatchTodoPrs = {
   state: string;
   todoId: string;
 };
-export type deleteTodoPr = {
+export type DeleteTodoPr = {
   todoId: string;
 };
