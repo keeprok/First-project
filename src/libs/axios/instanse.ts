@@ -1,11 +1,10 @@
 import axios from 'axios';
-import { Access_Token } from '../../utils/token';
+import { getSessionAccessToken } from '../../utils/auth-storage-manager';
 
 export const axiosInstanse = axios.create({
   baseURL: 'https://topdragon.co.kr',
   headers: {
     'Content-Type': 'application/json',
-    Authorization: `bearer${Access_Token}`,
+    Authorization: `bearer ${getSessionAccessToken()}`,
   },
 });
-//bearer찾는법
